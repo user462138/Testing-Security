@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D53D5AE1-E9BD-4A30-A4DB-ED3844A5A20F}|PRO2TS2324EX2.UnitTests\\PRO2TS2324EX2.UnitTests.csproj|c:\\users\\yazan\\documents\\academiejaar 2024-25\\testing \u0026 security\\herexamens\\pro2ts2324ex2end\\pro2ts2324ex2\\pro2ts2324ex2.unittests\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D53D5AE1-E9BD-4A30-A4DB-ED3844A5A20F}|PRO2TS2324EX2.UnitTests\\PRO2TS2324EX2.UnitTests.csproj|solutionrelative:pro2ts2324ex2.unittests\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55AF30B-E23F-4BDA-B9C3-851C53D94031}|PRO2TS2324EX2.IntegrationTests\\PRO2TS2324EX2.IntegrationTests.csproj|c:\\users\\yazan\\documents\\academiejaar 2024-25\\testing \u0026 security\\herexamens\\pro2ts2324ex2end\\pro2ts2324ex2\\pro2ts2324ex2.integrationtests\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55AF30B-E23F-4BDA-B9C3-851C53D94031}|PRO2TS2324EX2.IntegrationTests\\PRO2TS2324EX2.IntegrationTests.csproj|solutionrelative:pro2ts2324ex2.integrationtests\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D58BFF9-C957-4546-8EFE-C3680BF2CBF3}|PRO2TS2324EX2.FeatureTests\\PRO2TS2324EX2.FeatureTests.csproj|c:\\users\\yazan\\documents\\academiejaar 2024-25\\testing \u0026 security\\herexamens\\pro2ts2324ex2end\\pro2ts2324ex2\\pro2ts2324ex2.featuretests\\stepdefinitions\\subsriptorsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D58BFF9-C957-4546-8EFE-C3680BF2CBF3}|PRO2TS2324EX2.FeatureTests\\PRO2TS2324EX2.FeatureTests.csproj|solutionrelative:pro2ts2324ex2.featuretests\\stepdefinitions\\subsriptorsteps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 236,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tests.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\PRO2TS2324EX2.UnitTests\\Tests.cs",
+              "RelativeDocumentMoniker": "PRO2TS2324EX2.UnitTests\\Tests.cs",
+              "ToolTip": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\PRO2TS2324EX2.UnitTests\\Tests.cs",
+              "RelativeToolTip": "PRO2TS2324EX2.UnitTests\\Tests.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:14:07.998Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubsriptorSteps.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\PRO2TS2324EX2.FeatureTests\\StepDefinitions\\SubsriptorSteps.cs",
+              "RelativeDocumentMoniker": "PRO2TS2324EX2.FeatureTests\\StepDefinitions\\SubsriptorSteps.cs",
+              "ToolTip": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\PRO2TS2324EX2.FeatureTests\\StepDefinitions\\SubsriptorSteps.cs",
+              "RelativeToolTip": "PRO2TS2324EX2.FeatureTests\\StepDefinitions\\SubsriptorSteps.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T14:56:53.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tests.cs",
+              "DocumentMoniker": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\PRO2TS2324EX2.IntegrationTests\\Tests.cs",
+              "RelativeDocumentMoniker": "PRO2TS2324EX2.IntegrationTests\\Tests.cs",
+              "ToolTip": "C:\\Users\\yazan\\Documents\\academiejaar 2024-25\\Testing \u0026 security\\herexamens\\PRO2TS2324EX2end\\PRO2TS2324EX2\\PRO2TS2324EX2.IntegrationTests\\Tests.cs",
+              "RelativeToolTip": "PRO2TS2324EX2.IntegrationTests\\Tests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T13:45:03.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

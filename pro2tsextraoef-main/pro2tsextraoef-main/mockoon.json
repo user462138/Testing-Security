@@ -1,0 +1,623 @@
+{
+  "uuid": "3775f189-6d5f-4723-86d2-7732308c87f9",
+  "lastMigration": 32,
+  "name": "Mockoon",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "a67808f6-f6c9-4883-983e-6d86f21c6180",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data/2.5/weather",
+      "responses": [
+        {
+          "uuid": "a67b8425-cf6c-482b-9ccf-5fea0399dbec",
+          "body": "{\n  \"coord\": {\n    \"lon\": 4.4035,\n    \"lat\": 51.2199\n  },\n  \"weather\": [\n    {\n      \"id\": 803,\n      \"main\": \"Clouds\",\n      \"description\": \"broken clouds\",\n      \"icon\": \"04n\"\n    }\n  ],\n  \"base\": \"stations\",\n  \"main\": {\n    \"temp\": 20,\n    \"feels_like\": 0.72,\n    \"temp_min\": 3.78,\n    \"temp_max\": 6.01,\n    \"pressure\": 1030,\n    \"humidity\": 92\n  },\n  \"visibility\": 10000,\n  \"wind\": {\n    \"speed\": 5.66,\n    \"deg\": 200\n  },\n  \"clouds\": {\n    \"all\": 75\n  },\n  \"dt\": 1702915474,\n  \"sys\": {\n    \"type\": 2,\n    \"id\": 2000651,\n    \"country\": \"BE\",\n    \"sunrise\": 1702885333,\n    \"sunset\": 1702913724\n  },\n  \"timezone\": 3600,\n  \"id\": 2803138,\n  \"name\": \"Antwerp\",\n  \"cod\": 200\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "466e2872-8951-400a-bbb7-c762ac14d439",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "ce0d9ea0-c009-48e3-afe3-d31622ef4df2",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data/2.5/weather/14",
+      "responses": [
+        {
+          "uuid": "3736f26a-c03d-4759-8049-e377d1a8a2e8",
+          "body": "{\n  \"coord\": {\n    \"lon\": 4.4035,\n    \"lat\": 51.2199\n  },\n  \"weather\": [\n    {\n      \"id\": 803,\n      \"main\": \"Clouds\",\n      \"description\": \"broken clouds\",\n      \"icon\": \"04n\"\n    }\n  ],\n  \"base\": \"stations\",\n  \"main\": {\n    \"temp\": 14,\n    \"feels_like\": 0.72,\n    \"temp_min\": 3.78,\n    \"temp_max\": 6.01,\n    \"pressure\": 1030,\n    \"humidity\": 92\n  },\n  \"visibility\": 10000,\n  \"wind\": {\n    \"speed\": 5.66,\n    \"deg\": 200\n  },\n  \"clouds\": {\n    \"all\": 75\n  },\n  \"dt\": 1702915474,\n  \"sys\": {\n    \"type\": 2,\n    \"id\": 2000651,\n    \"country\": \"BE\",\n    \"sunrise\": 1702885333,\n    \"sunset\": 1702913724\n  },\n  \"timezone\": 3600,\n  \"id\": 2803138,\n  \"name\": \"Antwerp\",\n  \"cod\": 200\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "08475a05-33d2-4f37-82be-0b66db7a5a8b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "c012342a-1e68-4add-8fb5-72fe78103f99",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data/2.5/weather/15",
+      "responses": [
+        {
+          "uuid": "673941cb-ecbc-4841-a8e3-8a0f2059bbf0",
+          "body": "{\n  \"coord\": {\n    \"lon\": 4.4035,\n    \"lat\": 51.2199\n  },\n  \"weather\": [\n    {\n      \"id\": 803,\n      \"main\": \"Clouds\",\n      \"description\": \"broken clouds\",\n      \"icon\": \"04n\"\n    }\n  ],\n  \"base\": \"stations\",\n  \"main\": {\n    \"temp\": 15,\n    \"feels_like\": 0.72,\n    \"temp_min\": 3.78,\n    \"temp_max\": 6.01,\n    \"pressure\": 1030,\n    \"humidity\": 92\n  },\n  \"visibility\": 10000,\n  \"wind\": {\n    \"speed\": 5.66,\n    \"deg\": 200\n  },\n  \"clouds\": {\n    \"all\": 75\n  },\n  \"dt\": 1702915474,\n  \"sys\": {\n    \"type\": 2,\n    \"id\": 2000651,\n    \"country\": \"BE\",\n    \"sunrise\": 1702885333,\n    \"sunset\": 1702913724\n  },\n  \"timezone\": 3600,\n  \"id\": 2803138,\n  \"name\": \"Antwerp\",\n  \"cod\": 200\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "081d2481-266d-4c8d-bdc6-08018cb25f7b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "108d5b27-fef2-489e-9774-c5c7f9d2c5f9",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data/2.5/weather/20",
+      "responses": [
+        {
+          "uuid": "62a217d2-38a6-40fa-b85e-03b38b93792b",
+          "body": "{\n  \"coord\": {\n    \"lon\": 4.4035,\n    \"lat\": 51.2199\n  },\n  \"weather\": [\n    {\n      \"id\": 803,\n      \"main\": \"Clouds\",\n      \"description\": \"broken clouds\",\n      \"icon\": \"04n\"\n    }\n  ],\n  \"base\": \"stations\",\n  \"main\": {\n    \"temp\": 20,\n    \"feels_like\": 0.72,\n    \"temp_min\": 3.78,\n    \"temp_max\": 6.01,\n    \"pressure\": 1030,\n    \"humidity\": 92\n  },\n  \"visibility\": 10000,\n  \"wind\": {\n    \"speed\": 5.66,\n    \"deg\": 200\n  },\n  \"clouds\": {\n    \"all\": 75\n  },\n  \"dt\": 1702915474,\n  \"sys\": {\n    \"type\": 2,\n    \"id\": 2000651,\n    \"country\": \"BE\",\n    \"sunrise\": 1702885333,\n    \"sunset\": 1702913724\n  },\n  \"timezone\": 3600,\n  \"id\": 2803138,\n  \"name\": \"Antwerp\",\n  \"cod\": 200\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "759b482f-69b1-4878-b188-070d21481f52",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "17c58e32-b29c-4683-9d54-97e0fda620ca",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data/2.5/weather/25",
+      "responses": [
+        {
+          "uuid": "f9190750-ee28-4487-a19a-eb619e022534",
+          "body": "{\n  \"coord\": {\n    \"lon\": 4.4035,\n    \"lat\": 51.2199\n  },\n  \"weather\": [\n    {\n      \"id\": 803,\n      \"main\": \"Clouds\",\n      \"description\": \"broken clouds\",\n      \"icon\": \"04n\"\n    }\n  ],\n  \"base\": \"stations\",\n  \"main\": {\n    \"temp\": 25,\n    \"feels_like\": 0.72,\n    \"temp_min\": 3.78,\n    \"temp_max\": 6.01,\n    \"pressure\": 1030,\n    \"humidity\": 92\n  },\n  \"visibility\": 10000,\n  \"wind\": {\n    \"speed\": 5.66,\n    \"deg\": 200\n  },\n  \"clouds\": {\n    \"all\": 75\n  },\n  \"dt\": 1702915474,\n  \"sys\": {\n    \"type\": 2,\n    \"id\": 2000651,\n    \"country\": \"BE\",\n    \"sunrise\": 1702885333,\n    \"sunset\": 1702913724\n  },\n  \"timezone\": 3600,\n  \"id\": 2803138,\n  \"name\": \"Antwerp\",\n  \"cod\": 200\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "6f998425-aa74-44fc-b2b2-31273e3e4136",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "3a3226b3-b2b9-4419-9762-d8f765bcf0ee",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "data/2.5/weather/26",
+      "responses": [
+        {
+          "uuid": "b91329bd-95b3-4071-a9b8-3facad0ee1a4",
+          "body": "{\n  \"coord\": {\n    \"lon\": 4.4035,\n    \"lat\": 51.2199\n  },\n  \"weather\": [\n    {\n      \"id\": 803,\n      \"main\": \"Clouds\",\n      \"description\": \"broken clouds\",\n      \"icon\": \"04n\"\n    }\n  ],\n  \"base\": \"stations\",\n  \"main\": {\n    \"temp\": 26,\n    \"feels_like\": 0.72,\n    \"temp_min\": 3.78,\n    \"temp_max\": 6.01,\n    \"pressure\": 1030,\n    \"humidity\": 92\n  },\n  \"visibility\": 10000,\n  \"wind\": {\n    \"speed\": 5.66,\n    \"deg\": 200\n  },\n  \"clouds\": {\n    \"all\": 75\n  },\n  \"dt\": 1702915474,\n  \"sys\": {\n    \"type\": 2,\n    \"id\": 2000651,\n    \"country\": \"BE\",\n    \"sunrise\": 1702885333,\n    \"sunset\": 1702913724\n  },\n  \"timezone\": 3600,\n  \"id\": 2803138,\n  \"name\": \"Antwerp\",\n  \"cod\": 200\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "a953d65f-10d3-4aae-a1d4-321af736eb4b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "q",
+              "value": "Antwerp,BE",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "appid",
+              "value": "b1a90ec4d94d84ecf2a3f2bb634b970d",
+              "invert": true,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "units",
+              "value": "metric",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "a67808f6-f6c9-4883-983e-6d86f21c6180"
+    },
+    {
+      "type": "route",
+      "uuid": "ce0d9ea0-c009-48e3-afe3-d31622ef4df2"
+    },
+    {
+      "type": "route",
+      "uuid": "c012342a-1e68-4add-8fb5-72fe78103f99"
+    },
+    {
+      "type": "route",
+      "uuid": "108d5b27-fef2-489e-9774-c5c7f9d2c5f9"
+    },
+    {
+      "type": "route",
+      "uuid": "17c58e32-b29c-4683-9d54-97e0fda620ca"
+    },
+    {
+      "type": "route",
+      "uuid": "3a3226b3-b2b9-4419-9762-d8f765bcf0ee"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

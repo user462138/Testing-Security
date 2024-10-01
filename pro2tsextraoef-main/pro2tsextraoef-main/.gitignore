@@ -1,0 +1,9 @@
+.vs
+/Heater/obj
+/Heater/bin
+/Heater.Unittest/bin
+/Heater.Unittest/obj
+/Heater.Integrationtest/bin
+/Heater.Integrationtest/obj
+/Heater.Featuretest/bin
+/Heater.Featuretest/obj
